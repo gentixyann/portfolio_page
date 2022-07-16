@@ -36,8 +36,8 @@
       },
       {
         "title": "性活カレンダー",
-        "startDate": "2019",
-        "description": "このアプリはあなたの性活を記録するカレンダーです。パートナーとの幸せな営みのお供にご利用下さい。",
+        "startDate": "2020",
+        "description": "性活を記録するアプリです。地味に毎月数百円の収益あり。",
         "images": [
           "images/portfolio/animal-shelter/5.5inch.001.png",
           "images/portfolio/animal-shelter/happy-man.jpg"
@@ -63,14 +63,14 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "title": "Qiita",
+        "startDate": "2019",
+        "description": "プログラミングに関する知見を発信！！！",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/adventure/qiita.png",
+          "images/portfolio/adventure/p2.png"
         ],
-        "url": "https://github.com",
+        "url": "https://qiita.com/kokogento",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -81,8 +81,8 @@
             "name": "TypeScript"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
           }
         ]
       }

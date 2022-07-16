@@ -37,7 +37,7 @@
       {
         "title": "Seikatu calendar",
         "startDate": "2019",
-        "description": "This application is a calendar to record your sexual activity. Please use it as a companion for happy night activities with your partner.",
+        "description": "This application is a calendar to record your sexual activity. There is a little income every month from this app.",
         "images": [
           "images/portfolio/animal-shelter/5.5inch.001.png",
           "images/portfolio/animal-shelter/happy-man.jpg"
@@ -63,14 +63,14 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "title": "Qiita",
+        "startDate": "2019",
+        "description": "プログラミングに関する知見を発信！！！",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/adventure/qiita.png",
+          "images/portfolio/adventure/p2.png"
         ],
-        "url": "https://github.com",
+        "url": "https://qiita.com/kokogento",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -81,8 +81,8 @@
             "name": "TypeScript"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
           }
         ]
       }
