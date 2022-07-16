@@ -13,12 +13,36 @@
       {
         "title": "Animal Shelter",
         "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "description": "ナースに特化したメンタルサポートサービスです。医療者などの専門家と共に開発。",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/photography/p1.png",
+          "images/portfolio/photography/p2.png"
         ],
-        "url": "",
+        "url": "https://base-core-check.web.app/",
+        "technologies": [
+          {
+            "class": "devicon-nuxtjs-plain",
+            "name": "Nuxt"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-firebase-plain",
+            "name": "Firebase"
+          }
+        ]
+      },
+      {
+        "title": "Photography",
+        "startDate": "2018",
+        "description": "ナースに特化したメンタルサポートサービスです。医療者などの専門家と共に開発。",
+        "images": [
+          "images/portfolio/animal-shelter/5.5inch.001.png",
+          "images/portfolio/animal-shelter/happy-man.jpg"
+        ],
+        "url": "https://hcalendar-7c1f4.web.app/",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -29,28 +53,12 @@
             "name": "TypeScript"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
+            "class": "devicon-ionic-original",
+            "name": "Ionic"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-firebase-plain",
+            "name": "Firebase"
           }
         ]
       },

@@ -5,13 +5,13 @@
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/gentixyann",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "facebook",
+          "url": "https://www.facebook.com/gentiiin/",
+          "class": "fab fa-facebook-f"
         }
       ],
       "image": "myProfile.jpg"
