@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Gento.  I'm working with Flutter and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Thank you.",
+      "description": "👋 I'm Gento.  I'm working with Flutter as mainTech and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Much of my experience is in startups so I have learned a wide range of technologies as needed🧑🏻‍💻.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -89,28 +89,27 @@
     ],
     "experience": [
       {
-        "company": "SMHC Co., Ltd.",
-        "title": "Mobile App Developer",
-        "years": "08.2020 - present",
+        "company": "GREFF Co., Ltd.",
+        "title": "Full-Stack Developer",
+        "years": "09.2021 - present",
         "mainTech": [
-          "Angular 8/9/10"
+          "Flutter"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
+          "Docker",
+          "Laravel",
+          "Vue",
           "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "AWS",
+          "Firebase",
+          "MySql",
+          "Figma"
         ]
       },
       {
         "company": "SMHC Co., Ltd.",
         "title": "Mobile App Developer(Cross Platform)",
-        "years": "08.2019 - 09.2020",
+        "years": "08.2020 - 08.2021",
         "mainTech": [
           "Vue"
         ],
