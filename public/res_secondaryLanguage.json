@@ -1,19 +1,19 @@
 {
     "basic_info": {
-      "description_header": "どうも",
-      "description": "👋 Gentoです。Flutterでのアプリ開発をメインにAngular, React, Vue(Nuxt)でフロントエンドもやっております⭐。たまにバックエンドでlaravelとデザインでFigmaもします。スタートアップでの経験が多いので幅広い技術を必要に応じて習得してきました🧑🏻‍💻",
+      "description_header": "Hi",
+      "description": "👋 I'm Gento.  I'm working with Flutter as mainTech and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Much of my experience is in startups so I have learned a wide range of technologies as needed🧑🏻‍💻.",
       "section_name": {
-        "about": "軽く自己紹介",
-        "projects": "その他プロジェクト",
-        "skills": "スキル",
-        "experience": "経歴"
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
       }
     },
     "projects": [
       {
-        "title": "Nurse-be",
+        "title": "Nurse-be(beta ver)",
         "startDate": "2021",
-        "description": "ナースに特化したメンタルサポートサービスです。医療者、イラストレーターなど他業種の方と共に開発。",
+        "description": "This is a mental support service specialized for nurses. It's developed with medical professionals and other experts",
         "images": [
           "images/portfolio/photography/p1.png",
           "images/portfolio/photography/p2.png"
@@ -35,9 +35,9 @@
         ]
       },
       {
-        "title": "性活カレンダー",
-        "startDate": "2020",
-        "description": "性活を記録するアプリです。地味に毎月数百円の収益あり。",
+        "title": "Seikatu calendar",
+        "startDate": "2019",
+        "description": "This application is a calendar to record your sexual activity. There is a little income every month from this app.",
         "images": [
           "images/portfolio/animal-shelter/5.5inch.001.png",
           "images/portfolio/animal-shelter/happy-man.jpg"
@@ -65,7 +65,7 @@
       {
         "title": "Qiita",
         "startDate": "2019",
-        "description": "プログラミングに関する知見を発信！！！",
+        "description": "Contributing Programming Insights.",
         "images": [
           "images/portfolio/adventure/qiita.png",
           "images/portfolio/adventure/p2.png"
@@ -88,8 +88,8 @@
       }
     ],
     "experience": [
-       {
-        "company": "株式会社グレフ",
+      {
+        "company": "GREFF Co., Ltd.",
         "title": "Full-Stack Developer",
         "years": "09.2021 - present",
         "mainTech": [
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "company": "SMHC株式会社",
+        "company": "SMHC Co., Ltd.",
         "title": "Mobile App Developer(Cross Platform)",
         "years": "08.2020 - 08.2021",
         "mainTech": [
@@ -118,6 +118,20 @@
           "Cordova",
           "Laravel",
           "JavaScript"
+        ]
+      },
+      {
+        "company": "self-employment",
+        "title": "Web Designer",
+        "years": "08.2018 - present",
+        "mainTech": [
+          "HTML/CSS"
+        ],
+        "technologies": [
+          "HTML/CSS",
+          "JavaScript(jQuery)",
+          "WordPress",
+          "Google Apps Script"
         ]
       }
     ]
