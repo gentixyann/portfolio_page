@@ -1,7 +1,8 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Gento.  I'm working with Flutter as mainTech and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Much of my experience is in startups so I have learned a wide range of technologies as needed🧑🏻‍💻.",
+      "description1": "👋 I'm Gento.  I'm working with Flutter as mainTech and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Much of my experience is in startups so I have learned a wide range of technologies as needed🧑🏻‍💻.",
+      "description2": "Born in Osaka. e-Residency of Estonia. Experienced live-in staff for about 3 years at backpackers in 🇯🇵Japan and 🇳🇿New Zealand. Started web Designer after creating Google Street View. Later became interested in application development and worked as a programmer.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -10,6 +11,22 @@
       }
     },
     "projects": [
+      {
+        "title": "Motemagedon",
+        "startDate": "2023",
+        "description": "It is what is called feeling couple app. This application creates an opportunity to connect with more people at a party or other dating events.",
+        "images": [
+          "images/portfolio/motemagedon/6.5inch.001.png",
+          "images/portfolio/motemagedon/splash_screen.001.png"
+        ],
+        "url": "https://motemagedon.web.app/",
+        "technologies": [
+          {
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
+          }
+        ]
+      },
       {
         "title": "Nurse-be(beta ver)",
         "startDate": "2021",
@@ -103,7 +120,7 @@
           "AWS",
           "Firebase",
           "MySql",
-          "Figma"
+           "OpenAPI(Swagger)"
         ]
       },
       {
@@ -114,7 +131,6 @@
           "Vue"
         ],
         "technologies": [
-          "REST API",
           "Cordova",
           "Laravel",
           "JavaScript"
@@ -129,9 +145,10 @@
         ],
         "technologies": [
           "HTML/CSS",
-          "JavaScript(jQuery)",
+          "JavaScript",
           "WordPress",
-          "Google Apps Script"
+          "Google Apps Script",
+          "Vue(Nuxt)"
         ]
       }
     ]

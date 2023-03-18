@@ -1,7 +1,8 @@
  {
     "basic_info": {
       "description_header": "どうも",
-      "description": "👋 Gentoです。Flutterでのアプリ開発をメインにAngular, React, Vue(Nuxt)でフロントエンドもやっております⭐。たまにバックエンドでlaravelとデザインでFigmaもします。スタートアップでの経験が多いので幅広い技術を必要に応じて習得してきました🧑🏻‍💻",
+      "description1": "👋 Gentoです。Flutterでアプリ開発をメインにAngular, React, Vue(Nuxt)でフロントエンドもやっております⭐。バックエンドでlaravelとデザインでFigmaもします。スタートアップでの経験が多いので幅広い技術を必要に応じて習得してきました🧑🏻‍💻",
+      "description2": "大阪府貝塚市出身。エストニアの電子国民「e-Residency」。🇯🇵日本と🇳🇿NZのゲストハウスで3年ほど住み込みスタッフを経験。同時に屋内版Googleストリートビューの制作をきっかけにweb制作を始める。後にアプリ開発に興味を持ち、プログラマとして活動。",
       "section_name": {
         "about": "軽く自己紹介",
         "projects": "その他プロジェクト",
@@ -15,22 +16,14 @@
         "startDate": "2023",
         "description": "いわゆる「フィーリングカップル」アプリです。合コンなどの出会いの場に、もっと繋がるきっかけを作ります。",
         "images": [
-          "images/portfolio/photography/p1.png",
-          "images/portfolio/photography/p2.png"
+          "images/portfolio/motemagedon/6.5inch.001.png",
+          "images/portfolio/motemagedon/splash_screen.001.png"
         ],
-        "url": "https://base-core-check.web.app/",
+        "url": "https://motemagedon.web.app/",
         "technologies": [
           {
-            "class": "devicon-nuxtjs-plain",
-            "name": "Nuxt"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-firebase-plain",
-            "name": "Firebase"
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
           }
         ]
       },
@@ -89,7 +82,7 @@
       {
         "title": "Qiita",
         "startDate": "2019",
-        "description": "プログラミングに関する知見を発信！！！",
+        "description": "プログラミングに関する知見を発信",
         "images": [
           "images/portfolio/adventure/qiita.png",
           "images/portfolio/adventure/p2.png"
@@ -113,7 +106,7 @@
     ],
     "experience": [
        {
-        "company": "株式会社グレフ",
+        "company": "GREFF Co., Ltd.",
         "title": "Full-Stack Developer",
         "years": "09.2021 - present",
         "mainTech": [
@@ -127,18 +120,17 @@
           "AWS",
           "Firebase",
           "MySQL",
-          "Figma"
+          "OpenAPI(Swagger)"
         ]
       },
       {
-        "company": "SMHC株式会社",
+        "company": "SMHC Co., Ltd.",
         "title": "Mobile App Developer(Cross Platform)",
         "years": "08.2020 - 08.2021",
         "mainTech": [
           "Vue"
         ],
         "technologies": [
-          "REST API",
           "Cordova",
           "Laravel",
           "JavaScript"
@@ -153,9 +145,10 @@
         ],
         "technologies": [
           "HTML/CSS",
-          "JavaScript(jQuery)",
+          "JavaScript",
           "WordPress",
-          "Google Apps Script"
+          "Google Apps Script",
+          "Vue(Nuxt)"
         ]
       }
     ]

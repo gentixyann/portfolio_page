@@ -12,7 +12,8 @@ class About extends Component {
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+      var about1 = this.props.resumeBasicInfo.description1;
+      var about2 = this.props.resumeBasicInfo.description2;
     }
 
     return (
@@ -80,7 +81,10 @@ class About extends Component {
                     <span className="wave">{hello} :) </span>
                     <br />
                     <br />
-                    {about}
+                    {about1}
+                    <br />
+                    <br />
+                    {about2}
                   </div>
                 </div>
               </div>
