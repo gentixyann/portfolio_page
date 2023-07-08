@@ -118,7 +118,6 @@ class App extends Component {
             ></span>
           </div>
         </div>
-        <SketchP5 />
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
@@ -135,6 +134,7 @@ class App extends Component {
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
+         <SketchP5 />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );
