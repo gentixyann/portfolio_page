@@ -28,6 +28,22 @@
         ]
       },
       {
+        "title": "コミュニティシャッフル運動会",
+        "startDate": "2022",
+        "description": "あらゆるコミュニティを一同に集め、大運動会を共同主催。運営メンバーとして企画、営業、クラファンなどのデザインを担当",
+        "images": [
+          "images/portfolio/undoukai/undoukai1.png",
+          "images/portfolio/undoukai/undoukai2.png"
+        ],
+        "url": "https://note.com/moteasobu3ch/n/nbea2f47d8201",
+        "technologies": [
+          {
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
+          }
+        ]
+      },
+      {
         "title": "Nurse-be(ベータ版)",
         "startDate": "2021",
         "description": "ナースに特化したメンタルサポートサービスです。医療者、イラストレーターなど他業種の方と共に開発。",
