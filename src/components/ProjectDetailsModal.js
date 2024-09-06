@@ -28,11 +28,11 @@ class ProjectDetailsModal extends Component {
             </li>
           );
         });
-        if (this.props.data.images) {
-          var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
-          });
-        }
+      }
+      if (this.props.data.images) {
+        var img = images.map((elem, i) => {
+          return <div key={i} data-src={elem} />;
+        });
       }
     }
     return (
