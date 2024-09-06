@@ -1,8 +1,8 @@
 {
   "basic_info": {
     "description_header": "どうも",
-    "description1": "👋 Gentoです。Flutterでアプリ開発をメインにAngular, React, Vue(Nuxt)でフロントエンドもやっております⭐。バックエンドでlaravelとデザインでFigmaもします。スタートアップでの経験が多いので幅広い技術を必要に応じて習得してきました🧑🏻‍💻",
-    "description2": "大阪出身。エストニアの電子国民「e-Residency」🇯🇵日本と🇳🇿NZのゲストハウスで計3年ほど住み込みスタッフを経験。同時に屋内版Googleストリートビューの制作をきっかけにweb制作を始める。後にアプリ開発に興味を持ち独学し、アプリエンジニアとして活動。",
+    "description1": "👋 Gentoです。Flutterでアプリ開発をメインにAngular, React, Vue(Nuxt)でフロントエンドもやっております⭐。バックエンドでlaravelとデザイン作成でFigmaを使います。スタートアップでの経験が多いので幅広い技術を必要に応じて習得してきました🧑🏻‍💻",
+    "description2": "大阪出身。エストニアの電子国民「e-Residency」🇯🇵日本と🇳🇿NZのゲストハウスで計3年ほど住み込みスタッフを経験。同時に屋内版Googleストリートビューの制作をきっかけにweb制作を始める。後にアプリ開発に興味を持ち独学し、アプリエンジニアとして活動。イベントの企画やディレクションもたまにします。",
     "section_name": {
       "about": "軽く自己紹介",
       "projects": "プロジェクト",
@@ -11,6 +11,16 @@
     }
   },
   "projects": [
+    {
+      "title": "インドからの電話",
+      "startDate": "2023",
+      "description": "突然インドから電話がかかっきて指示に従ってストーリーを進めていく没入型体験コンテンツ「インドからの電話」の企画、脚本、運営の一部を担当。運営面ではターゲットを監視して、電話係とキャストに指示を出す「連絡係」を担当。",
+      "images": [
+        "images/portfolio/call-from-india/call-from-india1.png",
+        "images/portfolio/call-from-india/call-from-india2.jpg"
+      ],
+      "url": "https://note.com/moteasobu3ch/n/ned26ce391aa9"
+    },
     {
       "title": "モテマゲドン",
       "startDate": "2023",
@@ -26,16 +36,6 @@
           "name": "Flutter"
         }
       ]
-    },
-    {
-      "title": "インドからの電話",
-      "startDate": "2023",
-      "description": "突然インドから電話がかかっきて指示に従ってストーリーを進めていく没入型体験コンテンツ「インドからの電話」の企画、脚本、運営の一部を担当。運営面ではターゲットを監視して、電話係とキャストに指示を出す「連絡係」を担当。",
-      "images": [
-        "images/portfolio/undoukai/undoukai1.png",
-        "images/portfolio/undoukai/undoukai2.jpg"
-      ],
-      "url": "https://note.com/moteasobu3ch/n/ned26ce391aa9"
     },
     {
       "title": "コミュニティシャッフル運動会",

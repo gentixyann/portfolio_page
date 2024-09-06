@@ -1,171 +1,165 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description1": "👋 I'm Gento.  I'm working with Flutter as mainTech and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Much of my experience is in startups so I have learned a wide range of technologies as needed🧑🏻‍💻.",
-      "description2": "Born in Osaka. e-Residency of Estonia. Experienced live-in staff for about 3 years at backpackers in 🇯🇵Japan and 🇳🇿New Zealand. Started web Designer after creating Google Street View. Later became interested in application development and worked as a programmer.",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
+  "basic_info": {
+    "description_header": "Hi",
+    "description1": "👋 I'm Gento.  I'm working with Flutter as mainTech and Web front-end frameworks like Angular, React and Vue(Nuxt)⭐. Sometimes I also do design and back-end frameworks like Laravel. Much of my experience is in startups so I have learned a wide range of technologies as needed🧑🏻‍💻.",
+    "description2": "Born in Osaka. e-Residency of Estonia. Experienced live-in staff for about 3 years at backpackers in 🇯🇵Japan and 🇳🇿New Zealand. Started web Designer after creating Google Street View. Later became interested in application development and worked as a programmer. I also occasionally plan and direct events.",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Call from India",
+      "startDate": "2023",
+      "description": "Call from India is an immersive experience where participants receive an unexpected phone call from India. Following the instructions provided over the phone, they are drawn deeper into a captivating story. As part of the operation team, I handle both planning and scriptwriting. Additionally, I oversee the experience in real-time, monitoring participants and coordinating with phone operators and actors to ensure a seamless, engaging adventure.",
+      "images": [
+        "images/portfolio/call-from-india/call-from-india1.png",
+        "images/portfolio/call-from-india/call-from-india2.jpg"
+      ],
+      "url": "https://note.com/moteasobu3ch/n/ned26ce391aa9"
     },
-    "projects": [
-      {
-        "title": "Motemagedon",
-        "startDate": "2023",
-        "description": "It is what is called feeling couple app. This application creates an opportunity to connect with more people at a party or other dating events.",
-        "images": [
-          "images/portfolio/motemagedon/6.5inch.001.png",
-          "images/portfolio/motemagedon/splash_screen.001.png"
-        ],
-        "url": "https://motemagedon.web.app/",
-        "technologies": [
-          {
-            "class": "devicon-flutter-plain",
-            "name": "Flutter"
-          }
-        ]
-      },
-            {
-        "title": "Community shuffle sports day",
-        "startDate": "2022",
-        "description": "Bringing all communities together to co-sponsor a major sports day. As a management member, responsible for planning, sales, and design.",
-        "images": [
-          "images/portfolio/undoukai/undoukai1.png",
-          "images/portfolio/undoukai/undoukai2.jpg"
-        ],
-        "url": "https://note.com/moteasobu3ch/n/nbea2f47d8201",
-        "technologies": [
-          {
-            "class": "devicon-flutter-plain",
-            "name": "Flutter"
-          }
-        ]
-      },
-      {
-        "title": "Nurse-be(beta ver)",
-        "startDate": "2021",
-        "description": "This is a mental support service specialized for nurses. It's developed with medical professionals and other experts",
-        "images": [
-          "images/portfolio/photography/p1.png",
-          "images/portfolio/photography/p2.png"
-        ],
-        "url": "https://base-core-check.web.app/",
-        "technologies": [
-          {
-            "class": "devicon-nuxtjs-plain",
-            "name": "Nuxt"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-firebase-plain",
-            "name": "Firebase"
-          }
-        ]
-      },
-      {
-        "title": "Seikatu calendar",
-        "startDate": "2019",
-        "description": "This application is a calendar to record your sexual activity. There is a little income every month from this app.",
-        "images": [
-          "images/portfolio/animal-shelter/5.5inch.001.png",
-          "images/portfolio/animal-shelter/happy-man.jpg"
-        ],
-        "url": "https://hcalendar-7c1f4.web.app/",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-ionic-original",
-            "name": "Ionic"
-          },
-          {
-            "class": "devicon-firebase-plain",
-            "name": "Firebase"
-          }
-        ]
-      },
-      {
-        "title": "Qiita",
-        "startDate": "2019",
-        "description": "Contributing Programming Insights.",
-        "images": [
-          "images/portfolio/adventure/qiita.png",
-          "images/portfolio/adventure/p2.png"
-        ],
-        "url": "https://qiita.com/kokogento",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-flutter-plain",
-            "name": "Flutter"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "GREFF Co., Ltd.",
-        "title": "Full-Stack Developer",
-        "years": "09.2021 - present",
-        "mainTech": [
-          "Flutter"
-        ],
-        "technologies": [
-          "Docker",
-          "Laravel",
-          "Vue",
-          "JavaScript",
-          "AWS",
-          "Firebase",
-          "MySql",
-           "OpenAPI(Swagger)"
-        ]
-      },
-      {
-        "company": "SMHC Co., Ltd.",
-        "title": "Mobile App Developer(Cross Platform)",
-        "years": "08.2020 - 08.2021",
-        "mainTech": [
-          "Vue"
-        ],
-        "technologies": [
-          "Cordova",
-          "Laravel",
-          "JavaScript"
-        ]
-      },
-      {
-        "company": "self-employment",
-        "title": "Web Designer",
-        "years": "08.2018",
-        "mainTech": [
-          "HTML/CSS"
-        ],
-        "technologies": [
-          "HTML/CSS",
-          "JavaScript",
-          "WordPress",
-          "Google Apps Script",
-          "Vue(Nuxt)"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Motemagedon",
+      "startDate": "2023",
+      "description": "It is what is called feeling couple app. This application creates an opportunity to connect with more people at a party or other dating events.",
+      "images": [
+        "images/portfolio/motemagedon/6.5inch.001.png",
+        "images/portfolio/motemagedon/splash_screen.001.png"
+      ],
+      "url": "https://motemagedon.web.app/",
+      "technologies": [
+        {
+          "class": "devicon-flutter-plain",
+          "name": "Flutter"
+        }
+      ]
+    },
+    {
+      "title": "Community shuffle sports day",
+      "startDate": "2022",
+      "description": "Bringing all communities together to co-sponsor a major sports day. As a management member, responsible for planning, sales, and design.",
+      "images": [
+        "images/portfolio/undoukai/undoukai1.png",
+        "images/portfolio/undoukai/undoukai2.jpg"
+      ],
+      "url": "https://note.com/moteasobu3ch/n/nbea2f47d8201"
+    },
+    {
+      "title": "Nurse-be(beta ver)",
+      "startDate": "2021",
+      "description": "This is a mental support service specialized for nurses. It's developed with medical professionals and other experts",
+      "images": [
+        "images/portfolio/photography/p1.png",
+        "images/portfolio/photography/p2.png"
+      ],
+      "url": "https://base-core-check.web.app/",
+      "technologies": [
+        {
+          "class": "devicon-nuxtjs-plain",
+          "name": "Nuxt"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        }
+      ]
+    },
+    {
+      "title": "Seikatu calendar",
+      "startDate": "2019",
+      "description": "This application is a calendar to record your sexual activity. There is a little income every month from this app.",
+      "images": [
+        "images/portfolio/animal-shelter/5.5inch.001.png",
+        "images/portfolio/animal-shelter/happy-man.jpg"
+      ],
+      "url": "https://hcalendar-7c1f4.web.app/",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-ionic-original",
+          "name": "Ionic"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        }
+      ]
+    },
+    {
+      "title": "Qiita",
+      "startDate": "2019",
+      "description": "Contributing Programming Insights.",
+      "images": [
+        "images/portfolio/adventure/qiita.png",
+        "images/portfolio/adventure/p2.png"
+      ],
+      "url": "https://qiita.com/kokogento",
+      "technologies": [
+        {
+          "class": "devicon-angularjs-plain",
+          "name": "Angular"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-flutter-plain",
+          "name": "Flutter"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "GREFF Co., Ltd.",
+      "title": "Full-Stack Developer",
+      "years": "09.2021 - present",
+      "mainTech": ["Flutter"],
+      "technologies": [
+        "Docker",
+        "Laravel",
+        "Vue",
+        "JavaScript",
+        "AWS",
+        "Firebase",
+        "MySql",
+        "OpenAPI(Swagger)"
+      ]
+    },
+    {
+      "company": "SMHC Co., Ltd.",
+      "title": "Mobile App Developer(Cross Platform)",
+      "years": "08.2020 - 08.2021",
+      "mainTech": ["Vue"],
+      "technologies": ["Cordova", "Laravel", "JavaScript"]
+    },
+    {
+      "company": "self-employment",
+      "title": "Web Designer",
+      "years": "08.2018",
+      "mainTech": ["HTML/CSS"],
+      "technologies": [
+        "HTML/CSS",
+        "JavaScript",
+        "WordPress",
+        "Google Apps Script",
+        "Vue(Nuxt)"
+      ]
+    }
+  ]
+}
