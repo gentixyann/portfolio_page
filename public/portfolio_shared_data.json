@@ -1,78 +1,78 @@
 {
-    "basic_info": {
-      "name": "Gento",
-      "titles": [ "I'm thinking", "how to affect", "someone close to me", "by development" ],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com/gentixyann",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "facebook",
-          "url": "https://www.facebook.com/gentiiin/",
-          "class": "fab fa-facebook-f"
-        }
-      ],
-      "image": "myProfile.jpg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "Flutter",
-          "class": "devicon-flutter-plain",
-          "level": "85"
-        },
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-         {
-          "name": "Nuxt",
-          "class": "devicon-nuxtjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Docker",
-          "class": "devicon-docker-plain",
-          "level": "75"
-        },
-        {
-          "name": "Laravel",
-          "class": "devicon-laravel-plain",
-          "level": "85"
-        },
-        {
-          "name": "Firebase",
-          "class": "devicon-firebase-plain",
-          "level": "85"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "Gento",
+    "titles": ["Pumpkin", "Tofu", "Dumpling", "Development"],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/gentixyann",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/gentiiin/",
+        "class": "fab fa-facebook-f"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "Flutter",
+        "class": "devicon-flutter-plain",
+        "level": "85"
+      },
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain",
+        "level": "95"
+      },
+      {
+        "name": "Angular",
+        "class": "devicon-angularjs-plain",
+        "level": "80"
+      },
+      {
+        "name": "Nuxt",
+        "class": "devicon-nuxtjs-plain",
+        "level": "80"
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "90"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "70"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "75"
+      },
+      {
+        "name": "Laravel",
+        "class": "devicon-laravel-plain",
+        "level": "85"
+      },
+      {
+        "name": "Firebase",
+        "class": "devicon-firebase-plain",
+        "level": "85"
+      },
+      {
+        "name": "MySql",
+        "class": "devicon-mysql-plain",
+        "level": "60"
+      }
+    ]
   }
+}
