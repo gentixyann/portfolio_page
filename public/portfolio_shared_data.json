@@ -24,14 +24,9 @@
         "level": "85"
       },
       {
-        "name": "HTML 5",
-        "class": "devicon-html5-plain",
-        "level": "95"
-      },
-      {
-        "name": "CSS 3",
-        "class": "devicon-css3-plain",
-        "level": "95"
+        "name": "Next",
+        "class": "devicon-nextjs-plain",
+        "level": "80"
       },
       {
         "name": "Angular",
