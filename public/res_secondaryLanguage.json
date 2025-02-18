@@ -12,6 +12,16 @@
   },
   "projects": [
     {
+      "title": "Indiafulness",
+      "startDate": "2024",
+      "description": "Taking inspiration from the chaotic worldview of India, we planned and produced an experiential event that distracts from the self. We also developed a web application that allows people to experience IndianFullness in a virtual way.",
+      "images": [
+        "images/portfolio/indofullness/indofullness_logo.png",
+        "images/portfolio/indofullness/indofullness_overview.png"
+      ],
+      "url": "https://indofullness.moteasobu.jp/"
+    },
+    {
       "title": "Call from India",
       "startDate": "2023",
       "description": "Call from India is an immersive experience where participants receive an unexpected phone call from India. Following the instructions provided over the phone, they are drawn deeper into a captivating story. As part of the operation team, I handle both planning and scriptwriting. Additionally, I oversee the experience in real-time, monitoring participants and coordinating with phone operators and actors to ensure a seamless, engaging adventure.",

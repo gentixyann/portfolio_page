@@ -12,6 +12,16 @@
   },
   "projects": [
     {
+      "title": "マ！？インドフルネス",
+      "startDate": "2024",
+      "description": "インドの持つカオスな世界観からヒントを得た、自己から意識を逸らす体験イベントを企画・制作。また「マ！？インドフルネス」を疑似体験できるwebアプリの開発を行った。",
+      "images": [
+        "images/portfolio/indofullness/indofullness_logo.png",
+        "images/portfolio/indofullness/indofullness_overview.png"
+      ],
+      "url": "https://indofullness.moteasobu.jp/"
+    },
+    {
       "title": "インドからの電話",
       "startDate": "2023",
       "description": "突然インドから電話がかかっきて指示に従ってストーリーを進めていく没入型体験コンテンツ「インドからの電話」の企画、脚本、運営の一部を担当。運営面ではターゲットを監視して、電話係とキャストに指示を出す「連絡係」を担当。",
