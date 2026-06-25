@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 // サブページからも機能するよう先頭に "/" を付与
 const links = [
   { href: "/", label: "Top" },
-  { href: "/#values", label: "大事にしていること" },
-  { href: "/#work", label: "Work" },
-  { href: "/#skills", label: "スキル" },
+  { href: "/#values", label: "Values" },
+  { href: "/work", label: "Work" },
+  { href: "/#skills", label: "Skills" },
 ];
 
 export default function Header() {

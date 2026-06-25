@@ -5,7 +5,7 @@ import { skills, careers } from "@/lib/data";
 export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-[var(--container)] px-6 py-24 md:py-36">
-      <SectionHeading no="03" en="Skills" ja="スキル" />
+      <SectionHeading no="03" title="Skills" />
 
       <div className="grid gap-16 md:grid-cols-2 md:gap-20">
         {/* スキル一覧 */}

@@ -1,45 +1,36 @@
-import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
-import ProjectMeta from "./ProjectMeta";
+import WorkCard from "./WorkCard";
 import { projects } from "@/lib/data";
 
 export default function Work() {
+  // トップでは PC=4カラム×最大4行（16件）まで抜粋し、全件は /work へ
+  const featured = projects.slice(0, 16);
+
   return (
     <section id="work" className="mx-auto max-w-[var(--container)] px-6 py-24 md:py-36">
-      <SectionHeading no="02" en="Work" ja="つくったもの" />
+      <SectionHeading no="02" title="Work & Project" />
 
-      <ul className="grid gap-x-8 gap-y-16 md:grid-cols-2">
-        {projects.map((p, i) => (
-          <Reveal as="li" key={p.slug} delay={(i % 2) * 100}>
-            <Link href={`/work/${p.slug}`} className="group block">
-              <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-[var(--color-surface)] ring-1 ring-[var(--color-line)]">
-                <Image
-                  src={p.images[0]}
-                  alt={p.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 560px"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
-                />
-              </div>
-
-              <ProjectMeta year={p.year} tags={p.tags} className="mt-5" />
-
-              <h3 className="mt-2 flex items-center gap-2 text-xl font-semibold tracking-tight md:text-2xl">
-                {p.title}
-                <span className="text-base text-[var(--color-muted)] transition-transform duration-200 group-hover:translate-x-1">
-                  →
-                </span>
-              </h3>
-
-              <p className="mt-3 text-sm leading-relaxed text-[var(--color-muted)]">
-                {p.description}
-              </p>
-            </Link>
+      <ul className="grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-4 md:gap-x-6 md:gap-y-12">
+        {featured.map((p, i) => (
+          <Reveal as="li" key={p.slug} delay={(i % 4) * 80}>
+            <WorkCard project={p} />
           </Reveal>
         ))}
       </ul>
+
+      <Reveal className="mt-16">
+        <Link
+          href="/work"
+          className="group inline-flex items-center gap-2 rounded-full border border-[var(--color-line)] px-6 py-3 text-sm font-medium transition-colors hover:bg-[var(--color-ink)] hover:text-[var(--color-bg)]"
+        >
+          全ての Work を見る（{projects.length}）
+          <span className="transition-transform duration-200 group-hover:translate-x-0.5">
+            →
+          </span>
+        </Link>
+      </Reveal>
     </section>
   );
 }

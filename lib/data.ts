@@ -11,14 +11,24 @@ export type Value = {
   body: string;
 };
 
+// Work のフィルタ用カテゴリ（フィルタタブにこの順で表示）
+export const CATEGORIES = ["App", "Web Service", "Event", "Community", "Other"] as const;
+export type Category = (typeof CATEGORIES)[number];
+
+export type ProjectLink = {
+  label: string;
+  url: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
   year: string;
   description: string;
-  images: string[]; // 1枚目をカードのサムネイルに使用
-  url: string; // 外部リンク（詳細ページ内のリンク先）
-  tags: string[];
+  categories: Category[]; // 一覧のフィルタリング用タグ
+  roles: string[]; // 詳細ページの「Role」セクションに表示する役割
+  links: ProjectLink[]; // 詳細ページの「Links」セクションに表示する外部リンク
+  images: string[]; // 画像パスの配列。1枚目をカードのサムネイルに使用
 };
 
 export type Skill = {
@@ -73,90 +83,97 @@ export const projects: Project[] = [
     slug: "indofullness",
     title: "マ！？インドフルネス",
     year: "2024",
+    categories: ["Event", "Web Service"],
     description:
       "インドの持つカオスな世界観からヒントを得た、自己から意識を逸らす体験イベントを企画・制作。疑似体験できる web アプリの開発も担当。",
     images: [
-      "/images/portfolio/indofullness/indofullness_overview.png",
       "/images/portfolio/indofullness/indofullness_logo.png",
+      "/images/portfolio/indofullness/indofullness_overview.png",
     ],
-    url: "https://indofullness.moteasobu.jp/",
-    tags: ["企画", "Web App"],
+    roles: ["企画", "Web App"],
+    links: [{ label: "Website", url: "https://indofullness.moteasobu.jp/" }],
   },
   {
     slug: "call-from-india",
     title: "インドからの電話",
     year: "2023",
+    categories: ["Event"],
     description:
       "突然インドから電話がかかってきて、指示に従いストーリーを進める没入型体験コンテンツ。企画・脚本・運営の一部を担当。運営面ではターゲットを監視し、電話係とキャストに指示を出す「連絡係」を担当した。",
     images: [
       "/images/portfolio/call-from-india/call-from-india1.png",
       "/images/portfolio/call-from-india/call-from-india2.jpg",
     ],
-    url: "https://note.com/moteasobu3ch/n/ned26ce391aa9",
-    tags: ["企画", "脚本", "運営"],
+    roles: ["企画", "脚本", "運営"],
+    links: [{ label: "note", url: "https://note.com/moteasobu3ch/n/ned26ce391aa9" }],
   },
   {
     slug: "motemagedon",
     title: "モテマゲドン",
     year: "2023",
+    categories: ["App"],
     description:
       "いわゆる「フィーリングカップル」アプリ。合コンなどの出会いの場に、もっと繋がるきっかけを作ります。",
     images: [
       "/images/portfolio/motemagedon/6.5inch.001.png",
       "/images/portfolio/motemagedon/splash_screen.001.png",
     ],
-    url: "https://motemagedon.web.app/",
-    tags: ["Flutter"],
+    roles: ["企画", "開発"],
+    links: [{ label: "Website", url: "https://motemagedon.web.app/" }],
   },
   {
     slug: "community-undoukai",
     title: "コミュニティシャッフル運動会",
     year: "2022",
+    categories: ["Community", "Event"],
     description:
       "あらゆるコミュニティを一同に集めた大運動会を共同主催。運営メンバーとして企画・営業・クラファンのデザインを担当。",
     images: [
       "/images/portfolio/undoukai/undoukai1.png",
       "/images/portfolio/undoukai/undoukai2.jpg",
     ],
-    url: "https://note.com/moteasobu3ch/n/nbea2f47d8201",
-    tags: ["企画", "デザイン"],
+    roles: ["企画", "営業", "デザイン"],
+    links: [{ label: "note", url: "https://note.com/moteasobu3ch/n/nbea2f47d8201" }],
   },
   {
     slug: "nurse-be",
     title: "Nurse-be（ベータ版）",
     year: "2021",
+    categories: ["Web Service"],
     description:
       "ナースに特化したメンタルサポートサービス。医療者やイラストレーターなど他業種のメンバーと共に開発。",
     images: [
       "/images/portfolio/photography/p1.png",
       "/images/portfolio/photography/p2.png",
     ],
-    url: "https://base-core-check.web.app/",
-    tags: ["Nuxt", "TypeScript", "Firebase"],
+    roles: ["開発", "デザイン"],
+    links: [{ label: "Website", url: "https://base-core-check.web.app/" }],
   },
   {
     slug: "seikatsu-calendar",
     title: "性活カレンダー",
     year: "2020",
+    categories: ["App"],
     description: "性活を記録するアプリ。地味に毎月数百円の収益あり。",
     images: [
       "/images/portfolio/animal-shelter/5.5inch.001.png",
       "/images/portfolio/animal-shelter/happy-man.jpg",
     ],
-    url: "https://hcalendar-7c1f4.web.app/",
-    tags: ["Angular", "Ionic", "Firebase"],
+    roles: ["企画", "開発"],
+    links: [{ label: "Website", url: "https://hcalendar-7c1f4.web.app/" }],
   },
   {
     slug: "qiita",
     title: "Qiita",
     year: "2019",
+    categories: ["Other"],
     description: "プログラミングに関する知見を発信。",
     images: [
       "/images/portfolio/adventure/qiita.png",
       "/images/portfolio/adventure/p2.png",
     ],
-    url: "https://qiita.com/kokogento",
-    tags: ["Angular", "TypeScript", "Flutter"],
+    roles: ["執筆"],
+    links: [{ label: "Qiita", url: "https://qiita.com/kokogento" }],
   },
 ];
 

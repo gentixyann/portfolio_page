@@ -5,7 +5,7 @@ import { values, profile } from "@/lib/data";
 export default function Values() {
   return (
     <section id="values" className="mx-auto max-w-[var(--container)] px-6 py-24 md:py-36">
-      <SectionHeading no="01" en="Values" ja="大事にしていること" />
+      <SectionHeading no="01" title="Values" />
 
       <Reveal className="mb-16 max-w-2xl">
         <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
