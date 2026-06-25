@@ -1,17 +1,11 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
-import { values, profile } from "@/lib/data";
+import { values } from "@/lib/data";
 
 export default function Values() {
   return (
     <section id="values" className="mx-auto max-w-[var(--container)] px-6 py-24 md:py-36">
       <SectionHeading no="01" title="Values" />
-
-      <Reveal className="mb-16 max-w-2xl">
-        <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-          {profile.bio}
-        </p>
-      </Reveal>
 
       <ul className="grid gap-px overflow-hidden rounded-2xl border border-[var(--color-line)] bg-[var(--color-line)] md:grid-cols-3">
         {values.map((v, i) => (
