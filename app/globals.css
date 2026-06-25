@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* カラー：温かみのあるオフホワイト基調のモノトーン */
+  --color-bg: #f7f6f1;
+  --color-surface: #ffffff;
+  --color-ink: #1a1a18;
+  --color-muted: #6f6e69;
+  --color-line: #e4e2da;
+  --color-accent: #1a1a18;
+
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+
+  /* セクション最大幅 */
+  --container: 72rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* スクロール出現アニメーション */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+::selection {
+  background: #1a1a18;
+  color: #f7f6f1;
+}
