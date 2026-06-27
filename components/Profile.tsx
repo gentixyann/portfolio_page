@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import SocialLinks from "./SocialLinks";
 import { profile } from "@/lib/data";
 
 export default function Profile() {
@@ -9,7 +10,7 @@ export default function Profile() {
       <SectionHeading no="04" title="Profile" />
 
       <div className="grid items-start gap-10 md:grid-cols-[auto_1fr] md:gap-14">
-        <Reveal className="justify-self-center md:justify-self-start">
+        <Reveal className="flex flex-col items-center gap-6 justify-self-center md:justify-self-start">
           <div className="relative h-44 w-44 overflow-hidden rounded-full md:h-56 md:w-56">
             <Image
               src={profile.image}
@@ -19,6 +20,7 @@ export default function Profile() {
               className="object-cover"
             />
           </div>
+          <SocialLinks />
         </Reveal>
 
         <div className="max-w-2xl space-y-6">

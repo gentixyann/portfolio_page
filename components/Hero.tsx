@@ -1,5 +1,4 @@
 import Reveal from "./Reveal";
-import SocialLinks from "./SocialLinks";
 import HeroSketch from "./HeroSketch";
 import { profile } from "@/lib/data";
 
@@ -26,15 +25,11 @@ export default function Hero() {
               ))}
             </h1>
           </Reveal>
-
-          <Reveal delay={160}>
-            <SocialLinks className="mt-10" />
-          </Reveal>
         </div>
 
-        {/* 右側のジェネラティブスケッチ（PCのみ表示） */}
-        <Reveal delay={200} className="hidden md:block">
-          <div className="aspect-square w-full">
+        {/* ジェネラティブスケッチ（PCは右側、スマホはキャッチコピーの上に表示） */}
+        <Reveal delay={200} className="order-first md:order-none">
+          <div className="mx-auto aspect-square w-full max-w-sm md:max-w-none">
             <HeroSketch />
           </div>
         </Reveal>

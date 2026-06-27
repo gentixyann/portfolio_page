@@ -45,7 +45,8 @@ export type Career = {
 
 export const profile = {
   name: "Gento",
-  role: "App / Frontend Developer",
+  // トップのキャッチコピー上に置く一言（顧客の体験のために開発する、の意）
+  role: "Building for your experience",
   // トップに置くキャッチコピー
   catch: ["体験を、", "つくる。"],
   // 自己紹介（短文）
