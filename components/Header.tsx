@@ -9,6 +9,7 @@ const links = [
   { href: "/work", label: "Work" },
   { href: "/#skills", label: "Skills" },
   { href: "/#profile", label: "Profile" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
