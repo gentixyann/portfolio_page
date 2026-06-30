@@ -20,6 +20,19 @@ html {
   scroll-padding-top: 5rem;
 }
 
+/* スマホで意図しない横スクロールが出ないようにする */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* p5.js のキャンバスが親コンテナをはみ出さないように */
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-ink);

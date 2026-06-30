@@ -43,8 +43,9 @@ export default function HeroSketch() {
 
           const screenPct = Math.min(s.height, s.width) / 1000;
           const fontSize = screenPct * 150;
-          INNER_RADIUS = screenPct * 220;
-          RADIUS_VARIATION = screenPct * 200;
+          INNER_RADIUS = screenPct * 170;
+          // 輪郭の揺れ幅（最大サイズが大きくなりすぎないよう抑えめに）
+          RADIUS_VARIATION = screenPct * 250;
 
           s.textFont("Helvetica");
           s.textSize(fontSize);
@@ -56,13 +57,16 @@ export default function HeroSketch() {
           const angle = pct * s.TWO_PI;
           const cosAngle = s.cos(angle);
           const sinAngle = s.sin(angle);
-          const time = s.frameCount / 100;
+          // ノイズの時間進行を速めて、輪郭の変形をよりダイナミックに
+          const time = s.frameCount / 55;
           const noiseValue = s.noise(
             NOISE_SCALE * cosAngle + NOISE_SCALE,
             NOISE_SCALE * sinAngle + NOISE_SCALE,
             time
           );
-          const radius = INNER_RADIUS + RADIUS_VARIATION * noiseValue;
+          // 全体が伸縮する「呼吸」のような演出（±約15%のサイズ変化）
+          const pulse = 1 + 0.15 * s.sin(s.frameCount / 45);
+          const radius = (INNER_RADIUS + RADIUS_VARIATION * noiseValue) * pulse;
           return {
             x: radius * cosAngle + centerX,
             y: radius * sinAngle + centerY,

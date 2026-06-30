@@ -123,7 +123,7 @@ export default async function WorkDetail({
                     rel="noopener noreferrer"
                     className="group inline-flex w-fit items-center gap-1.5 font-medium transition-colors hover:text-[var(--color-muted)]"
                   >
-                    {l.label}
+                    {l.url}
                     <span className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                       <ExternalIcon />
                     </span>

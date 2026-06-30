@@ -1,5 +1,20 @@
 // サイト全体のコンテンツ定義。文言・データはここを編集すれば各セクションに反映されます。
 
+// public/images 配下のディレクトリ一覧（dev/build 前に自動生成される）。
+// images に末尾スラッシュ付きのディレクトリパスを書くと、その中の全画像に展開されます。
+import imageManifest from "./imageManifest.json";
+
+const manifest = imageManifest as Record<string, string[]>;
+
+// images の各エントリを展開する。
+// "/images/portfolio/foo/" のような末尾スラッシュ付きはフォルダ内の全画像に、
+// それ以外は通常の画像パスとしてそのまま使う。
+function expandImages(images: string[]): string[] {
+  return images.flatMap((entry) =>
+    entry.endsWith("/") ? manifest[entry] ?? [] : [entry]
+  );
+}
+
 export type SocialLink = {
   name: string;
   url: string;
@@ -16,7 +31,6 @@ export const CATEGORIES = ["App", "Web Service", "Event", "Community", "Other"] 
 export type Category = (typeof CATEGORIES)[number];
 
 export type ProjectLink = {
-  label: string;
   url: string;
 };
 
@@ -43,6 +57,13 @@ export type Career = {
   stack: string[];
 };
 
+// 副業・業務委託（期間表記なし。案件名と内容を箇条書きで並べる）
+export type SideWork = {
+  name: string; // 会社名 / 案件名
+  description: string; // 役割・内容
+  url?: string; // 関連リンク（任意。description の下に表示）
+};
+
 export const profile = {
   name: "Gento",
   // トップのキャッチコピー上に置く一言（顧客の体験のために開発する、の意）
@@ -50,7 +71,7 @@ export const profile = {
   // トップに置くキャッチコピー
   catch: ["体験を、", "つくる。"],
   // 自己紹介（短文）
-  lead: "Flutter でのアプリ開発を軸に、Angular / React / Vue(Nuxt) でフロントエンド、Laravel でバックエンド、Figma でデザインまで。スタートアップで幅広い技術を必要に応じて習得してきました。",
+  lead: "Flutter でのアプリ開発を軸に、Angular / Next / Nuxt でフロントエンド、Laravel でバックエンド、Figma でデザインまで。スタートアップで幅広い技術を必要に応じて習得してきました。",
   bio: "大阪出身。エストニアの電子国民「e-Residency」。🇯🇵日本と🇳🇿NZのゲストハウスで計3年ほど住み込みスタッフを経験。屋内版 Google ストリートビューの制作をきっかけに web 制作を始め、後にアプリ開発へ。イベントの企画やディレクションもときどき手がけます。",
   social: [
     { name: "GitHub", url: "https://github.com/gentixyann" },
@@ -75,24 +96,56 @@ export const values: Value[] = [
   {
     no: "03",
     title: "カオスを面白がる",
-    body: "海外のゲストハウス暮らしやインド発のイベント制作で学んだのは、想定外を楽しむ力。型にはまらない発想を、形にすることを楽しんでいます。",
+    body: "海外のゲストハウスやシェアハウス暮らし、イベント企画で学んだのは、想定外を楽しむ力。トラブルや予期せぬ出来事を楽しんでいます。",
   },
 ];
 
-export const projects: Project[] = [
+const rawProjects: Project[] = [
+  {
+    slug: "bar_open",
+    title: "バー・オープン公式サイト",
+    year: "2026",
+    categories: ["Community"],
+    description:
+      "合同会社ケムリキカクで共同運営する札幌のコミュニティー・バーの公式サイトを制作。p5.jsを使ったアニメーションで人の流れを糸に見立て、絡まり交わり合うようなイメージでBarの世界観を演出。",
+    images: ["/images/portfolio/bar_open/"],
+    roles: ["運営",],
+    links: [{ url: "https://bar-open.pages.dev/" }],
+  },
+  {
+    slug: "urban_jungle",
+    title: "アーバンジャングル",
+    year: "2024",
+    categories: ["Community"],
+    description:
+      "合同会社ケムリキカクを共同創業し、空き家を活用しシェアハウス・民泊・飲食・イベントスペースが一体となった複合施設「アーバンジャングル」を立ち上げ運営メンバーとして参画。立ち上げ時のクラウドファンディングで230万円を調達。",
+    images: ["/images/portfolio/urban_jungle/"],
+    roles: ["運営",],
+    links: [{ url: "https://camp-fire.jp/projects/764474/view" }],
+  },
   {
     slug: "indofullness",
+    title: "マ！？インドフルネス Web App",
+    year: "2024",
+    categories: ["Web Service"],
+    description:
+      "インドの持つカオスな世界観からヒントを得た、自己から意識を逸らすインドフルネスを疑似体験できる web アプリを開発",
+    images: ["/images/portfolio/indofullness/"],
+    roles: ["デザイン", "開発"],
+    links: [{ url: "https://indofullness.moteasobu.jp/" }],
+  },
+  {
+    slug: "indofullness_event",
     title: "マ！？インドフルネス",
     year: "2024",
-    categories: ["Event", "Web Service"],
+    categories: ["Event"],
     description:
-      "インドの持つカオスな世界観からヒントを得た、自己から意識を逸らす体験イベントを企画・制作。疑似体験できる web アプリの開発も担当。",
+      "インドの持つカオスな世界観からヒントを得た、自己から意識を逸らす体験イベントの企画・制作に従事。設営から協力メンバーのマネジメントまで幅広く担当。",
     images: [
-      "/images/portfolio/indofullness/indofullness_logo.png",
-      "/images/portfolio/indofullness/indofullness_overview.png",
+      "/images/portfolio/indofullness_event/",
     ],
-    roles: ["企画", "Web App"],
-    links: [{ label: "Website", url: "https://indofullness.moteasobu.jp/" }],
+    roles: ["企画", "イベント運営"],
+    links: [{ url: "https://100banch.com/nanananasai2024-assassin-from-india" }],
   },
   {
     slug: "call-from-india",
@@ -101,12 +154,9 @@ export const projects: Project[] = [
     categories: ["Event"],
     description:
       "突然インドから電話がかかってきて、指示に従いストーリーを進める没入型体験コンテンツ。企画・脚本・運営の一部を担当。運営面ではターゲットを監視し、電話係とキャストに指示を出す「連絡係」を担当した。",
-    images: [
-      "/images/portfolio/call-from-india/call-from-india1.png",
-      "/images/portfolio/call-from-india/call-from-india2.jpg",
-    ],
+    images: ["/images/portfolio/call-from-india/"],
     roles: ["企画", "脚本", "運営"],
-    links: [{ label: "note", url: "https://note.com/moteasobu3ch/n/ned26ce391aa9" }],
+    links: [{ url: "https://note.com/moteasobu3ch/n/ned26ce391aa9" }],
   },
   {
     slug: "motemagedon",
@@ -115,12 +165,9 @@ export const projects: Project[] = [
     categories: ["App"],
     description:
       "いわゆる「フィーリングカップル」アプリ。合コンなどの出会いの場に、もっと繋がるきっかけを作ります。",
-    images: [
-      "/images/portfolio/motemagedon/6.5inch.001.png",
-      "/images/portfolio/motemagedon/splash_screen.001.png",
-    ],
-    roles: ["企画", "開発"],
-    links: [{ label: "Website", url: "https://motemagedon.web.app/" }],
+    images: ["/images/portfolio/motemagedon/"],
+    roles: ["企画", "開発", "デザイン"],
+    links: [{ url: "https://motemagedon.web.app/" }],
   },
   {
     slug: "community-undoukai",
@@ -129,26 +176,9 @@ export const projects: Project[] = [
     categories: ["Community", "Event"],
     description:
       "あらゆるコミュニティを一同に集めた大運動会を共同主催。運営メンバーとして企画・営業・クラファンのデザインを担当。",
-    images: [
-      "/images/portfolio/undoukai/undoukai1.png",
-      "/images/portfolio/undoukai/undoukai2.jpg",
-    ],
-    roles: ["企画", "営業", "デザイン"],
-    links: [{ label: "note", url: "https://note.com/moteasobu3ch/n/nbea2f47d8201" }],
-  },
-  {
-    slug: "nurse-be",
-    title: "Nurse-be（ベータ版）",
-    year: "2021",
-    categories: ["Web Service"],
-    description:
-      "ナースに特化したメンタルサポートサービス。医療者やイラストレーターなど他業種のメンバーと共に開発。",
-    images: [
-      "/images/portfolio/photography/p1.png",
-      "/images/portfolio/photography/p2.png",
-    ],
-    roles: ["開発", "デザイン"],
-    links: [{ label: "Website", url: "https://base-core-check.web.app/" }],
+    images: ["/images/portfolio/undoukai/"],
+    roles: ["企画", "営業", "デザイン", "運営"],
+    links: [{ url: "https://note.com/moteasobu3ch/n/nbea2f47d8201" }],
   },
   {
     slug: "seikatsu-calendar",
@@ -156,12 +186,9 @@ export const projects: Project[] = [
     year: "2020",
     categories: ["App"],
     description: "性活を記録するアプリ。地味に毎月数百円の収益あり。",
-    images: [
-      "/images/portfolio/animal-shelter/5.5inch.001.png",
-      "/images/portfolio/animal-shelter/happy-man.jpg",
-    ],
-    roles: ["企画", "開発"],
-    links: [{ label: "Website", url: "https://hcalendar-7c1f4.web.app/" }],
+    images: ["/images/portfolio/seikatsu-calendar/"],
+    roles: ["企画", "開発", "デザイン"],
+    links: [{ url: "https://hcalendar-7c1f4.web.app/" }],
   },
   {
     slug: "qiita",
@@ -169,14 +196,17 @@ export const projects: Project[] = [
     year: "2019",
     categories: ["Other"],
     description: "プログラミングに関する知見を発信。",
-    images: [
-      "/images/portfolio/adventure/qiita.png",
-      "/images/portfolio/adventure/p2.png",
-    ],
+    images: ["/images/portfolio/adventure/"],
     roles: ["執筆"],
-    links: [{ label: "Qiita", url: "https://qiita.com/kokogento" }],
+    links: [{ url: "https://qiita.com/kokogento" }],
   },
 ];
+
+// images のディレクトリ指定をフォルダ内の全画像に展開した最終的なプロジェクト一覧
+export const projects: Project[] = rawProjects.map((p) => ({
+  ...p,
+  images: expandImages(p.images),
+}));
 
 // slug からプロジェクトを取得
 export function getProject(slug: string): Project | undefined {
@@ -184,24 +214,22 @@ export function getProject(slug: string): Project | undefined {
 }
 
 export const skills: Skill[] = [
-  { name: "TypeScript", level: 90 },
-  { name: "Flutter", level: 85 },
+  { name: "Flutter", level: 90 },
   { name: "Laravel", level: 85 },
   { name: "Firebase", level: 85 },
   { name: "Next.js", level: 80 },
-  { name: "Angular", level: 80 },
   { name: "Nuxt", level: 80 },
   { name: "Docker", level: 75 },
-  { name: "JavaScript", level: 70 },
-  { name: "MySQL", level: 60 },
+  { name: "Angular", level: 70 },
+  { name: "MySQL", level: 65 },
 ];
 
 export const careers: Career[] = [
   {
     company: "GREFF Co., Ltd.",
     role: "Full-Stack Developer",
-    period: "2021.09 - present",
-    stack: ["Flutter", "Laravel", "Vue", "AWS", "Firebase", "MySQL"],
+    period: "2021.09 - 2024.06",
+    stack: ["Flutter", "Laravel", "Next.js", "AWS", "Firebase", "MySQL", "Docker"],
   },
   {
     company: "SMHC Co., Ltd.",
@@ -213,6 +241,24 @@ export const careers: Career[] = [
     company: "個人事業主",
     role: "Web Designer",
     period: "2018.08 -",
-    stack: ["HTML/CSS", "JavaScript", "WordPress", "Nuxt"],
+    stack: ["HTML/CSS", "JavaScript", "WordPress", "Figma"],
+  },
+];
+
+// 副業・業務委託の案件一覧（内容は実際のものに書き換えてください）
+export const sideWork: SideWork[] = [
+  {
+    name: "株式会社Plusbase",
+    description: "創業前フェーズの一人目のエンジニアとして参画。プロダクトビジョン策定からプロダクト開発を代表・医療従事者と共に推進。",
+    url: "https://prtimes.jp/main/html/rd/p/000000003.000097455.html",
+  },
+  {
+    name: "合同会社モテアソブ三軒茶屋",
+    description: "イベント企画・Web制作を行う会社。共同創業者として参画し、Web制作・イベント企画・運営を担当。",
+    url: "https://moteasobu.jp/member/page/gento",
+  },
+  {
+    name: "Imaginext,Inc.",
+    description: "Web サイトのデザイン・制作と、や屋内版Googleストリートビュー制作を担当。",
   },
 ];
