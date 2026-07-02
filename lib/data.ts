@@ -226,13 +226,19 @@ export const skills: Skill[] = [
 
 export const careers: Career[] = [
   {
+    company: "POPOPO Inc.",
+    role: "Mobile App Developer",
+    period: "2025.03 - ",
+    stack: ["Flutter", "Firebase", "Unity", "Devin", "Codex", "Claude Code"],
+  },
+  {
     company: "GREFF Co., Ltd.",
     role: "Full-Stack Developer",
     period: "2021.09 - 2024.06",
     stack: ["Flutter", "Laravel", "Next.js", "AWS", "Firebase", "MySQL", "Docker"],
   },
   {
-    company: "SMHC Co., Ltd.",
+    company: "SMHC Inc.",
     role: "Mobile App Developer (Cross Platform)",
     period: "2020.08 - 2021.08",
     stack: ["Vue", "Cordova", "Laravel", "JavaScript"],
